@@ -51,7 +51,7 @@ function NewThread() {
               id="title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="mt-1 block w-full border-gray-200 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+              className="mt-1 block w-full p-1 border-gray-200 border rounded-md shadow-sm focus:border-blue-500 sm:text-sm"
               required
             />
           </div>

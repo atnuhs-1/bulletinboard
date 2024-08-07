@@ -43,9 +43,9 @@ const ThreadList = () => {
             {data.map((thread: Thread) => (
               <li
                 key={thread.id}
-                className="bg-white shadow-sm  p-4 border-b border-gray-300"
+                className="bg-white hover:bg-slate-50 shadow-sm  border-b border-gray-300"
               >
-                <Link to={`/thread/${thread.id}`} state={{title: thread.title}}>
+                <Link to={`/thread/${thread.id}`} state={{title: thread.title}} className="block p-4">
                   <h2 className="text-lg font-medium text-gray-900">
                     {thread.title}
                   </h2>
