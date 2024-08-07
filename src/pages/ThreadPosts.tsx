@@ -18,7 +18,6 @@ export default function ThreadPosts() {
   const [loading, setLoading] = useState(true);
 
   const [post, setPost] = useState("");
-  const navigate = useNavigate();
 
   const title = location.state?.title || "No Title";
 
@@ -96,7 +95,7 @@ export default function ThreadPosts() {
       </div>
 
       {/* 投稿フォーム */}
-      <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="bg-white p-6 rounded-lg">
         <h2 className="text-2xl font-semibold mb-4">新しい投稿</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <textarea

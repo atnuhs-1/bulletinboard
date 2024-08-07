@@ -1,9 +1,8 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ThreadList from "./components/ThreadList"; // スレッド一覧のコンポーネント
-import NewThread from "./components/NewThread"; // スレッド新規作成用のコンポーネント
 import Header from "./components/Header";
-import ThreadPosts from "./components/ThreadPosts";
+import ThreadList from "./pages/ThreadList";
+import NewThread from "./pages/NewThread";
+import ThreadPosts from "./pages/ThreadPosts";
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ThreadList />} />
           <Route path="/threads/new" element={<NewThread />} />
-          <Route path="/thread/:thread_id" element={<ThreadPosts />}/>
+          <Route path="/thread/:thread_id" element={<ThreadPosts />} />
         </Routes>
       </div>
     </Router>
